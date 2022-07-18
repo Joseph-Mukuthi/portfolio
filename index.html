@@ -5,16 +5,60 @@
         <link rel="stylesheet" href="bootstrap-3.3/css/bootstrap.css">
         <script src="bootstrap-3.3/jquery.js"></script>
         <script src="bootstrap-3.3/js/bootstrap.js"></script>
+        <style>
+            section {
+                width: 100vw;
+                height: 100vh;
+                padding: 50px;
+            }
+            .cl-white {
+                color: #0098ff;
+            }
+            img {
+                width: 350px;
+                transition:opacity 1s ease-in-out ;
+            }
+            img:hover {
+                opacity: .5;
+            }
+        </style>
     </head>
     <body data-spy="scroll" data-target=".navbar">
         <nav class="navbar navbar-inverse">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">What I do</a></li>
-                <li><a href="#">Contact me</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#work">What we do</a></li>
+                <li><a href="#about">What I do</a></li>
+                <li><a href="#contact">Contact me</a></li>
             </ul>
         </nav>
         <!--home section-->
+        <section id="home" style="background: url(images/image1.jpg); background-size: 100% 100%;" class="cl-white text-center">
+            <h1>My portfolio</h1>
+            <p class="lead">Let us just read myself and contact me!</p>
+            <button class="btn btn-info">Contact me</button>
+        </section>
+        <!-- My work section-->
+        <section id="work">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="text-center">My work</h1>
+                </div>
+                <img src="images/image2.jpg" alt="js-code" class="img-thumbnail">
+                <img src="images/image3.jpg" alt="comp-structure" class="img-thumbnail">
+                <img src="images/image4.jpg" alt="zoom-code" class="img-thumbnail">
+                <img src="images/image5.jpg" alt="office-layout" class="img-thumbnail">
+                <img src="images/image6.jpg" alt="phone-slogan" class="img-thumbnail">
+                <img src="images/image5.jpg" alt="office-layout" class="img-thumbnail">
+            </div>
+        </section>
+        <!--About section-->
+        <section id="about">
+
+        </section>
+        <!--contact section-->
+        <section id="contact">
+
+        </section>
     </body>
 </html>
